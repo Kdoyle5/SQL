@@ -1,0 +1,26 @@
+Create Table store(id integer primary key, item text, selection text, price integer, popularity integer);
+
+Insert Into Store Values ( 1,"moisturizer", "Beauty",50,80);
+Insert Into Store Values (2, "toner", "Beauty",45,60);
+Insert Into Store Values ( 3, "cleanser", "Beauty",35,70);
+Insert Into Store Values (4, "makeup remover", "Beauty",30,55);
+Insert Into Store Values (5,"shampoo", "hygiene", 20,90);
+Insert Into Store Values (6, "chocolate", "snacks", 5,75); 
+Insert Into Store Values (7, "chips", "snacks",3,77);
+Insert Into Store Values (8, "toilet paper", "sanitary", 20, 88);
+Insert Into Store Values(9, "razors", "sanitary", 25, 90);
+Insert Into Store values (10, "nail polish", "beauty", 5,40);
+Insert Into Store Values (11, "sunscreen", "health",12,60);
+Insert Into Store Values (12, "conditioner", "hygiene",15, 89);
+Insert Into Store Values (13, "vitamins","health",10,35);
+Insert Into Store Values (14, "makeup", "beauty", 11,88);
+Insert Into Store Values (15, "deoderant", "hygiene",8, 82);
+SELECT * FROM store;
+
+display the database ordered by price.
+Select* from store Order by price;
+
+What is the most popular item 
+Select item, price, popularity from store 
+Order by popularity desc;
+
